@@ -13,7 +13,7 @@ function App() {
     <CategoriesProvider>
         <DrinksProvider>
               <header className="py-5">
-                <h1>Cocktail</h1>
+                <h1>Kitchen Recipes</h1>
               </header>
               <Container className="mt-5">
                     <FormComponent/>

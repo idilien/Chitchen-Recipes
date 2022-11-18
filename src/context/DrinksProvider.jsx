@@ -16,9 +16,11 @@ const DrinksProvider = ({children}) => {
        const getRecipe = async () => {
         if(!drinkById ) return
         try {
-            const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkById}`
+            // const url = `https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${drinkById}`
+            const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${drinkById}`
             const {data} = await axios(url)
-            setRecipe(data.drinks[0]);
+            console.log(data);
+            setRecipe(data.meals[0]);
         } catch (error) {
             console.log(error)
         }finally{
@@ -31,9 +33,11 @@ const DrinksProvider = ({children}) => {
 
     const consultDrink = async datas => {
         try {
-            const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${datas.nameCocktail}&c=${datas.category}`
+            // const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${datas.nameCocktail}&c=${datas.category}`
+            const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${datas.nameCocktail}&c=${datas.category}`
             const {data} = await axios(url)
-            setDrinks(data.drinks)
+            // console.log(data.meals);
+            setDrinks(data.meals)
             
         } catch (error) {
             console.log(error)

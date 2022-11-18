@@ -33,10 +33,10 @@ const FormComponent = () => {
             <Row>
                 <Col md={6}>
                     <Form.Group className="m-3">
-                        <Form.Label htmlFor="nameCocktail">Drink</Form.Label>
+                        <Form.Label htmlFor="nameCocktail">Ingredient</Form.Label>
                         <Form.Control className=""                 
                                         type="text"
-                                        placeholder="Ej: Caipiriña, Manhattan..." 
+                                        placeholder="Ej: tomatoes, vegetables..." 
                                         name="nameCocktail"
                                         id="nameCocktail"
                                         value={search.nameCocktail}

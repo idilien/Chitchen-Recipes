@@ -6,7 +6,7 @@ const ModalDrink = () => {
     
     const{modal, handleModal, recipe, setRecipe, spinner} = useDrinks()
 
-    const{strDrinkThumb, strDrink, strInstructions, strIngredient, strMeasure} = recipe
+    const{strMealThumb, strArea, strMeal, strInstructions, strIngredient, strMeasure} = recipe
 
     const seeIngredients = () => {
       let ingredients = []
@@ -26,15 +26,17 @@ const ModalDrink = () => {
               handleModal()
               setRecipe({})
             }}>
-                <Image src={strDrinkThumb}
+                <Image src={strMealThumb}
                             alt="img modal"
                             />
                 <Modal.Header>
                     <Modal.Title className="text-black">
-                      {strDrink}
+                     <h2>{strMeal}</h2> 
                     </Modal.Title>
                 </Modal.Header>
                   <Modal.Body className="text-black">
+                  <h5>{strArea}</h5>
+                      
                       <div className="p-3">
                         <h5>Instructions</h5>
                         {strInstructions}

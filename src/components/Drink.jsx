@@ -12,21 +12,21 @@ const Drink = ({drink}) => {
         <Card className="mb-4 ">
             <Card.Img
                 variant="top"
-                src={drink.strDrinkThumb}
+                src={drink.strMealThumb}
                 alt="img strDrinks"
             />
             <Card.Body>
                 <Card.Title className="text-black">
-                    {drink.strDrink}
+                    {drink.strMeal}
                 </Card.Title>
                 <Button className="mt-1 py-1 w-100 text-uppercase "
                         variant="outline-success"
                         onClick={() => {
                             handleModal()
-                            handleDrinkById(drink.idDrink)
+                            handleDrinkById(drink.idMeal)
                         }}
                 >
-                        see more
+                        read more
                 </Button>
             </Card.Body>
         </Card>
