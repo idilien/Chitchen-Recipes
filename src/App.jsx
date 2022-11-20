@@ -12,8 +12,8 @@ function App() {
   return (
     <CategoriesProvider>
         <DrinksProvider>
-              <header className="py-5">
-                <h1>Kitchen Recipes</h1>
+              <header>
+                <h1 className="">Kitchen Recipes</h1>
               </header>
               <Container className="mt-5">
                     <FormComponent/>

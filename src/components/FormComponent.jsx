@@ -4,9 +4,6 @@ import useCategories from "../hooks/useCategories"
 import useDrinks from "../hooks/useDrinks"
 
 
-
-
-
 const FormComponent = () => {
     const [search, setSearch] = useState({
         nameCocktail: '',
