@@ -26,6 +26,7 @@ const ModalDrink = () => {
               handleModal()
               setRecipe({})
             }}>
+           
                 <Image src={strMealThumb}
                             alt="img modal"
                             />
@@ -43,7 +44,17 @@ const ModalDrink = () => {
                         <h5 className="mt-3">Ingredients & Quantity</h5>
                         {seeIngredients()}
                       </div>
+                      <div className=" ">
+                      <button
+                            className="text-uppercase w-100"
+                            onClick={handleModal}
+                               
+                            >
+                        Back
+                    </button>
+                      </div>
                   </Modal.Body>
+                     
           </Modal>
           )
   )

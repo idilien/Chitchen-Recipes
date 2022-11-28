@@ -75,8 +75,7 @@ const FormComponent = () => {
                     <Button
                             className="text-uppercase w-100"
                             variant="success"
-                            type="submit"
-                            
+                            type="submit"     
                             >
                         search
                     </Button>
